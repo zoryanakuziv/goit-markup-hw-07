@@ -48,11 +48,12 @@
 }
 .social-icon-link {
   @include socialLinkSet;
-  @include transitionType(background-color);
   @include transitionType(fill);
-}
-.social-icon-link:hover,
-.social-icon-link:focus {
-  fill: $primary-white-color;
-  background-color: $accent-background-color;
+  @include transitionType;
+
+  &:hover,
+  &:focus {
+    fill: $primary-white-color;
+    background-color: $accent-background-color;
+  }
 }

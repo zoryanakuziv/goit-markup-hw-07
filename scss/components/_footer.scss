@@ -40,7 +40,6 @@
   display: flex;
   margin-top: 20px;
 }
-
 .join-us-social-list {
   display: flex;
   align-items: center;
@@ -53,13 +52,12 @@
     $bcg-color: rgba(255, 255, 255, 0.1),
     $color: $primary-white-color
   );
-  @include transitionType(background-color);
-  @include transitionType(fill);
-}
-.join-us-social-link:hover,
-.join-us-social-link:focus {
-  background-color: $accent-background-color;
-  cursor: pointer;
+  @include transitionType;
+  &:hover,
+  &:focus {
+    background-color: $accent-background-color;
+    cursor: pointer;
+  }
 }
 .subscribe {
   margin-top: 12px;
@@ -86,12 +84,13 @@
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-}
-.subscribe-input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 .subscribe-button {
   width: 200px;

@@ -14,11 +14,12 @@
   text-decoration: none;
 
   @include transitionType(color);
-}
-.contact-nav-link:hover,
-.contact-nav-link:focus,
-.contact-nav-link .current {
-  color: $accent-color;
+
+  &:hover,
+  &:focus,
+  & .current {
+    color: $accent-color;
+  }
 }
 .contact-nav-item + .contact-nav-item {
   margin-left: 50px;
@@ -30,8 +31,9 @@
   fill: currentColor;
 
   @include transitionType(color);
-}
-.contact-nav-icon:hover,
-.contact-nav-icon:focus {
-  color: $accent-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }

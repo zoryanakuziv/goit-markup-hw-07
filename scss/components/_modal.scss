@@ -110,13 +110,14 @@
   border-radius: 4px;
 
   @include transitionType(border-color);
+  &::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
-.modal-textarea::placeholder {
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
+
 .modal-privacy {
   @include centeredFlex;
 
@@ -141,24 +142,25 @@
   height: 15px;
   margin-right: 9px;
   border: 2px solid $title-text-color;
-}
-.checkbox:checked:focus + .modal-accept-icon {
-  background-image: url('../images/icon_accept.svg');
-  background-repeat: no-repeat;
-  background-color: $accent-background-color;
-  background-size: cover;
-  background-origin: border-box;
-  border: 2px solid $accent-color;
-  border-radius: 2px;
-}
-.checkbox:focus + .modal-accept-icon {
-  background-image: url('../images/icon_accept.svg');
-  background-repeat: no-repeat;
-  background-color: $accent-background-color;
-  background-size: cover;
-  background-origin: border-box;
-  border: 2px solid $accent-color;
-  border-radius: 2px;
+
+  .checkbox:checked:focus + & {
+    background-image: url('../images/icon_accept.svg');
+    background-repeat: no-repeat;
+    background-color: $accent-background-color;
+    background-size: cover;
+    background-origin: border-box;
+    border: 2px solid $accent-color;
+    border-radius: 2px;
+  }
+  .checkbox:focus + & {
+    background-image: url('../images/icon_accept.svg');
+    background-repeat: no-repeat;
+    background-color: $accent-background-color;
+    background-size: cover;
+    background-origin: border-box;
+    border: 2px solid $accent-color;
+    border-radius: 2px;
+  }
 }
 .modal-submit-button {
   display: block;

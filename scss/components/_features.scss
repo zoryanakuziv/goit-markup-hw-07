@@ -18,12 +18,13 @@
 }
 .feature-item {
   width: calc((100%-90px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+    align-content: flex-start;
+  }
 }
 
-.feature-item:not(:last-child) {
-  margin-right: 30px;
-  align-content: flex-start;
-}
 .feature-list .title {
   margin-bottom: 10px;
 

@@ -3,8 +3,10 @@
   justify-content: center;
   margin-bottom: 50px;
 }
-.filter-item + .filter-item {
-  margin-left: 8px;
+.filter-item {
+  & + & {
+    margin-left: 8px;
+  }
 }
 .filter-button {
   padding: 6px 22px;
@@ -19,16 +21,15 @@
   border-radius: 4px;
   cursor: pointer;
   border-style: none;
-}
-.filter-button:hover,
-.filter-button:focus,
-.filter-button.current {
-  color: $primary-white-color;
-  background-color: $accent-background-color;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  outline: none;
-
   @include transitionType(color);
+  &:hover,
+  &:focus,
+  & .current {
+    color: $primary-white-color;
+    background-color: $accent-background-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    outline: none;
+  }
 }
