@@ -1,0 +1,58 @@
+.team {
+  background-color: $secondary-background-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-name {
+  color: $title-text-color;
+  font-weight: $medium-font-weight;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-position {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-list {
+  display: flex;
+  display-basis: calc((100%-90px) / 4);
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-card {
+  width-max: 270;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: $primary-background-color;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  display-basis: calc((100%-30px) / 4);
+}
+.social-icons li:not(:last-child) {
+  margin-right: 10px;
+}
+.social-icon-link {
+  @include socialLinkSet;
+  @include transitionType(background-color);
+  @include transitionType(fill);
+}
+.social-icon-link:hover,
+.social-icon-link:focus {
+  fill: $primary-white-color;
+  background-color: $accent-background-color;
+}

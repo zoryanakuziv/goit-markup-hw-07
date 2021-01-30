@@ -1,0 +1,15 @@
+.header {
+  background-color: $primary-white-color;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-navigation {
+  @include centeredFlex(flex);
+}

@@ -1,0 +1,21 @@
+@mixin centeredFlex($type: flex) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
+@mixin socialLinkSet(
+  $bcg-color: $primary-background-color,
+  $color: $icon-color
+) {
+  @include centeredFlex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $bcg-color;
+  fill: $color;
+}
+@mixin transitionType($type) {
+  transition-property: $type;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,8 @@
+.portfolio {
+  padding-top: 100px;
+  padding-bottom: 94px;
+  background-color: $primary-background-color;
+}
+.portfolio-header {
+  @extend %visually-hidden;
+}

@@ -1,0 +1,27 @@
+body {
+  background-color: $primary-background-color;
+  color: $primary-text-color;
+  font-family: $primary-font-family, sans-serif;
+}
+ul,
+h1,
+h2,
+h3,
+p {
+  @extend %resetSettings;
+}
+li {
+  @extend %listStyle;
+}
+h2 {
+  margin-bottom: 50px;
+  color: $title-text-color;
+  font-weight: $bold-font-weight;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.container {
+  @extend %containerSettings;
+}

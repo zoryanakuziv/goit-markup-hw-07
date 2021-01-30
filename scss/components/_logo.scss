@@ -1,0 +1,21 @@
+.logo {
+  display: inline-block;
+  margin-right: 93px;
+
+  color: $title-text-color;
+  font-family: $secondary-font-family;
+  font-style: normal;
+  font-weight: $bold-font-weight;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.logo-first-part {
+  color: $accent-color;
+}
+.second-part {
+  color: $primary-white-color;
+}
+.footer .logo-second-part {
+  color: $primary-white-color;
+}

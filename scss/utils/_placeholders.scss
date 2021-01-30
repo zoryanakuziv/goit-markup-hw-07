@@ -1,0 +1,20 @@
+%resetSettings {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+%listStyle {
+  list-style: none;
+}
+%containerSettings {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+%visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

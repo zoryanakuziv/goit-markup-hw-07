@@ -1,0 +1,119 @@
+.footer {
+  background-color: $dark-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-wrapper {
+  display: flex;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  color: $primary-white-color;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.address-contact {
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.join-us {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+.join-us-text {
+  font-weight: $bold-font-weight;
+  font-size: 14px;
+  line-height: 1, 14;
+  color: $primary-white-color;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.join-us-links {
+  display: flex;
+  margin-top: 20px;
+}
+
+.join-us-social-list {
+  display: flex;
+  align-items: center;
+}
+.join-us-social-list li:not(:last-child) {
+  margin-right: 10px;
+}
+.join-us-social-link {
+  @include socialLinkSet(
+    $bcg-color: rgba(255, 255, 255, 0.1),
+    $color: $primary-white-color
+  );
+  @include transitionType(background-color);
+  @include transitionType(fill);
+}
+.join-us-social-link:hover,
+.join-us-social-link:focus {
+  background-color: $accent-background-color;
+  cursor: pointer;
+}
+.subscribe {
+  margin-top: 12px;
+  margin-left: 93px;
+}
+.subscribe-text {
+  font-weight: $bold-font-weight;
+  font-size: 14px;
+  line-height: 1, 14;
+  color: $primary-white-color;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.subscribe-input {
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  margin-right: 7px;
+  padding: 15px 16px;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: $dark-background-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.subscribe-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-button {
+  width: 200px;
+  height: 50px;
+  border-style: none;
+  background-color: $accent-background-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: transparent;
+  cursor: pointer;
+}
+.subscribe-button-text {
+  margin-right: 10px;
+  font-weight: $bold-font-weight;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+}
+.subscribe-button-icon {
+  fill: $primary-white-color;
+}
+.subscribe-button-wrapper {
+  @include centeredFlex;
+}
